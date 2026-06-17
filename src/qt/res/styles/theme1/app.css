@@ -68,7 +68,7 @@ QLabel#labelTotal,
 #labelNetwork,
 #labelBlockChain,
 #labelMempoolTitle{
-    color: #009933;
+    color: #04e89e;
 }
 QLabel#overriddenByCommandLineLabel{
     color: #bdbdbd;
@@ -536,8 +536,8 @@ QTextEdit::focus:!read-only{
     border: 1px solid #7e7e7e;
 }
 QTextEdit::disabled {
-    border: 1px solid rgba(59, 59, 59, 40%);
-    color: rgba(150, 150, 150, 10%);
+    border: 1px solid rgba(90, 93, 90, 40%);
+    color: rgba(42, 42, 42, 10%);
 }
 /*--------------------------------------------
 QPlainTextEdit CSS
@@ -619,7 +619,7 @@ QProgressBar {
     text-align: center;
 }
 QProgressBar::chunk {
-    background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #00b37c, stop: 1 #00aa3a);
+    background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #00b37c, stop: 1 #02e09c);
     border-radius: 0px;
 }
 QProgressBar::disabled {
@@ -674,7 +674,7 @@ QMenuBar::item:selected {
     color: #232121;
 }
 QMenuBar::item:disabled {
-    color: rgba(105, 104, 105, 10%);
+    color: rgba(105, 105, 104, 10%);
 }
 /*--------------------------------------------
 Menu CSS
@@ -685,7 +685,7 @@ QMenu{
 QMenu::item {
     border: none;
     padding: 5px 32px;
-    background-color: #ddeedc;
+    background-color: #dededd;
     color: #636363;
 }
 QMenu::item:selected {
@@ -828,7 +828,7 @@ Push Button CSS
 --------------------------------------------*/
 QPushButton {
     color: white; 
-    background: #22c458;
+    background: #02e09c;
     border: none;
     border-radius: 12px;
     min-width: 5em;
@@ -836,15 +836,15 @@ QPushButton {
     margin: 0px;
 }
 QPushButton:hover{
-    background: #007f2f;
+    background: #01c488;
 }
 QPushButton:pressed {
     background: #00b37c;
-    color: #a4e5b0;
+    color: #a4f0d1;
 }
 QPushButton::disabled {
     color: rgba(255, 255, 255, 40%);
-    background: rgba(0, 153, 51, 0.6);
+    background: rgba(2, 224, 156, 60%);
 }
 /*--------------------------------------------
 Scroll Area CSS
@@ -912,7 +912,7 @@ QCalendarWidget QWidget{
     border-radius: 0px;
 }
 #qt_calendar_navigationbar{
-    background: #2eaa5a;
+    background: #2ED09A;
 }
 QCalendarWidget QAbstractSpinBox {
     min-width: 0px;
@@ -1012,7 +1012,7 @@ Stake Page Widget CSS
     margin-top: 20px;
 }
 #frameStakeInfo #labelAssets{
-    color: #009933;
+    color: #04e89e;
     font: 17pt;
 }
 #frameStakeInfo #labelHeight,
@@ -1083,7 +1083,7 @@ Token Page Widget CSS
     background-color: rgba(46, 46, 46, 20%);
     border: 1px solid rgba(156, 156, 156, 20%);
 }
-#tokenItemFrame, #delegationItemFrame, #superStakerItemFrame{
+#tokenItemFrame{
     background-color: #393939;
     border-radius: 6px;
 }
@@ -1107,69 +1107,6 @@ TokenItemWidget #tokenLogo{
     background-color: #575757;
     border-radius: 20px;
 }
-DelegationListWidget{
-    background-color: #2e2e2e;
-}
-DelegationItemWidget #labelFee,
-#labelNewDelegation{
-    color: #C5C5C5;
-    font: 13pt;
-}
-DelegationItemWidget #labelStaker{
-    color: white;
-    font: 13pt;
-}
-DelegationItemWidget #labelAddress{
-    color: #9c9c9c;
-    font: 10pt;
-}
-DelegationItemWidget #delegationLogo{
-    background-color: #575757;
-    border-radius: 20px;
-}
 #coinControlContentsWidget{
     background-color: #2e2e2e;
-}
-SuperStakerListWidget{
-    background-color: #2e2e2e;
-}
-SuperStakerItemWidget #labelFee,
-#labelNewSuperStaker{
-    color: #C5C5C5;
-    font: 13pt;
-}
-SuperStakerItemWidget #labelStaker{
-    color: white;
-    font: 13pt;
-}
-SuperStakerItemWidget #labelAddress{
-    color: #9c9c9c;
-    font: 10pt;
-}
-SuperStakerItemWidget #superStakerLogo{
-    background-color: #575757;
-    border-radius: 20px;
-}
-SuperStakerItemWidget #buttonDelegations{
-    min-width: 7em;
-    padding: 1px;
-    border-radius: 8px;
-    min-height: 16px;
-    font: 8pt;
-}
-QFrame #frameStakerConfig{
-    background-color: #2e2e2e;
-}
-/*--------------------------------------------
-Delegate and Staker Page Widget CSS
---------------------------------------------*/
-#widgetStakingAssets QLabel{
-    color: #9c9c9c;
-}
-#widgetStakingAssets #labelAssets{
-    color: #009933;
-    font: 13pt;
-}
-#vLineAssets{
-    border-left: 1px solid #404140;
 }
