@@ -61,7 +61,7 @@ bool ModalOverlay::eventFilter(QObject * obj, QEvent * ev) {
                 setGeometry(0, height(), width(), height());
 
         }
-        else if (ev->type() == QEvent::ChildAeddd) {
+        else if (ev->type() == QEvent::ChildAdded) {
             raise();
         }
     }
