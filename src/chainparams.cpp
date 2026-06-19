@@ -330,7 +330,7 @@ public:
         m_assumed_blockchain_size = 0;
         m_assumed_chain_state_size = 0;
 
-        UpdateVersionBitsParametersFromArgs(args);
+        UpdateActivationParametersFromArgs(args);
 
         genesis = CreateGenesisBlock(1754375400, 1, 0x207fffff, 1, 5000 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
@@ -369,7 +369,7 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x35, 0x87, 0xCF};
         base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x35, 0x83, 0x94};
 
-        bech32_hrp = "qcrt";
+        bech32_hrp = "ucrt";
     }
 
     /**
