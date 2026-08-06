@@ -50,7 +50,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
     const auto chainParams = CreateChainParams(CBaseChainParams::MAIN);
     const Consensus::Params& consensusParams = chainParams->GetConsensus();
     CAmount nSum = 0;
-    for (int nHeight = 1; nHeight < 14000000; nHeight++) {
+    for (int nHeight = 1; nHeight < 30000000; nHeight++) {
         CAmount nSubsidy = GetBlockSubsidy(nHeight, consensusParams);
 
         if(nHeight <= consensusParams.nLastPOWBlock){
@@ -83,7 +83,7 @@ BOOST_AUTO_TEST_CASE(subsidy_limit_test)
         nSum += nSubsidy;
         BOOST_CHECK(MoneyRange(nSum));
     }
-    BOOST_CHECK_EQUAL(nSum, 1190840412000000000ULL);// total supply 1192B
+    BOOST_CHECK_EQUAL(nSum, 1190840412500000000ULL);
 }
 
 static bool ReturnFalse() { return false; }

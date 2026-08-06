@@ -15,7 +15,7 @@ static const CAmount COIN = 1000000;
 static const CAmount CENT = 10000;
 
 /** No amount larger than this (in satoshi) is valid.*/
-static const CAmount MAX_MONEY = 92000000000 * COIN + 25 * (COIN / 100);
+static const CAmount MAX_MONEY = 1200000000000ULL * COIN + 25 * (COIN / 100);
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 #endif //  BITCOIN_AMOUNT_H

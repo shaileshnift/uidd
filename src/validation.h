@@ -84,7 +84,7 @@ static const uint64_t MINIMUM_GAS_LIMIT = 10000;
 static const uint64_t MEMPOOL_MIN_GAS_LIMIT = 22000;
 
 /** Default for -minrelaytxfee, minimum relay fee for transactions */
-static const unsigned int DEFAULT_MIN_RELAY_TX_FEE = 400000;
+static const unsigned int DEFAULT_MIN_RELAY_TX_FEE = 100000;
 /** Default for -limitancestorcount, max number of in-mempool ancestors */
 static const unsigned int DEFAULT_ANCESTOR_LIMIT = 25;
 /** Default for -limitancestorsize, maximum kilobytes of tx + all in-mempool ancestors */
