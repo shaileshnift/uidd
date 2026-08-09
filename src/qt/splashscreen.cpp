@@ -81,10 +81,7 @@ SplashScreen::SplashScreen(interfaces::Node& node, Qt::WindowFlags f, const Netw
     pixPaint.drawPath(logoPath);
 
     // FIX: Load the raw resource directly into QPixmap to skip all color filters
-    QPixmap logo(":/icons/bitcoin");
-
-    // Scale it safely to your required image size, keeping smooth transformations
-    logo = logo.scaled(QSize(logoImageSize, logoImageSize), Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    QPixmap logo = PlatformStyle::SingleColorIcon(":/icons/bitcoin", foreground_color).pixmap(QSize(logoImageSize, logoImageSize));
     pixPaint.drawPixmap(logoRect.x() + 6, logoRect.y() + 6, logo);
 
     pixPaint.setPen(foreground_color);
